@@ -1,0 +1,19 @@
+Admin:
+  tiFyMembershipListUser:
+    admin_menu:
+      parent_slug:  'tiFyMembership'
+      menu_slug:    'tiFyMembership'
+      position:     1
+    cb:           '\tiFy\Plugins\Membership\Admin\ListUser'    
+    edit_template:  'tiFyMembershipEditUser'
+    
+  tiFyMembershipEditUser:
+    admin_menu:
+      parent_slug:  'tiFyMembership'
+      menu_slug:    'tiFyMembershipEditUser'
+      position:     2
+    cb:           '\tiFy\Plugins\Membership\Admin\EditUser'
+    
+Labels:
+  plural:           "<?php _e( 'Membres', 'tify' );?>"
+  singular:         "<?php _e( 'Membre', 'tify' );?>"
