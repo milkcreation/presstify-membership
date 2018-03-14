@@ -1,0 +1,9 @@
+Admin:
+  tiFyMembershipOptions:
+    admin_menu:
+      parent_slug:  'tiFyMembership'
+      menu_slug:    'tiFyMembershipOptions'
+      menu_title:   "<?php _e( 'Options', 'tify' );?>"
+      position:     4
+    cb:           '\tiFy\Plugins\Membership\Admin\Options'
+    
