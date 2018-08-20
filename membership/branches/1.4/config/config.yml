@@ -1,0 +1,33 @@
+# Listes des rôles et habilitations
+roles:
+  tify_membership:
+    display_name:           "<?php _e( 'Membre', 'tify' );?>"
+    capabilities:           [ ]   
+    show_admin_bar_front:   false
+    wp_ui:                  false
+
+# Contenu d'accroche
+hook_id:                    0 
+
+## Affichage du contenu de la page ( 'before' | 'after' | 'hide' )
+## 'before' : Affiche le contenu du post avant
+## 'after'  : Affiche le contenu du post après
+## 'hide'   : Masque le contenu du post
+content:                    'hide'
+
+# Fonction de rappel d'affichage
+template:
+
+# Emailing
+mailer:
+  # Email d'activation de compte envoyé au membre concerné
+  activation:               true
+  # Email d'alerte d'activation de compte envoyé au membre concerné 
+  activated:                true
+          
+
+
+# Attibuts de formulaires    
+form:
+  subscribe:
+  account:
