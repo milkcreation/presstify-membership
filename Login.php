@@ -6,42 +6,30 @@ namespace tiFy\Plugins\Membership;
 
 use tiFy\Plugins\Membership\User;
 
-class Login extends \tiFy\Core\User\Login\Factory
+class Login extends \tiFy\Components\Login\Factory
 {
-    /**
-     * CONTROLEURS
-     */
-    /**
-     * Récupération de l'url de redirection du formulaire d'authentification
-     *
-     * @param string $redirect_url Url de redirection personnalisée
-     * @param \WP_User $user Utilisateur courant
-     *
-     * @return string
-     */
-    public function get_login_form_redirect($redirect_url = '', $user)
-    {
-        return Membership::getBaseUri();
-    }
-
     /**
      * Vérification des droits d'authentification d'un utilisateur
      *
-     * @param \WP_User $user
-     * @param string $username Identifiant de l'utilisateur passé en argument de la requête d'authentification
-     * @param string $password Mot de passe en clair passé en argument de la requête d'authentification
+     * @param \WP_User|WP_Error $user
+     * @param string $username
+     * @param string $password
      *
-     * @return \WP_Error|\WP_User
+     * @return \WP_User|WP_Error
      */
     public function authenticate($user, $username, $password)
     {
+        // Appel du parent
         $user = parent::authenticate($user, $username, $password);
 
         // Bypass
         if (is_wp_error($user)) :
             return $user;
         endif;
-        if (!$user instanceof \WP_User) :
+        if (empty($user->ID)) :
+            return $user;
+        endif;
+        if (empty(array_intersect($this->getRoles(), $user->roles))) :
             return $user;
         endif;
 

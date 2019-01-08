@@ -4,29 +4,16 @@ namespace tiFy\Plugins\Membership;
 use tiFy\Core\Templates\Templates;
 use tiFy\Plugins\Membership\Membership;
 
-class Admin extends \tiFy\App
+class Admin extends \tiFy\App\Factory
 {
-    /**
-     * CONSTRUCTEUR
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        parent::__construct();
-
-        // Déclaration des événements
-        $this->appAddAction('tify_templates_register');
-    }
-
-    /**
-     * EVNEMENTS
-     */
-    /**
-     * Inititalisation globale
-     *
-     * @return void
-     */
+	/* = ARGUMENTS = */
+	// Liste des actions à déclencher
+	protected $tFyAppActions				= array(
+		'tify_templates_register'	
+	);
+	
+	/* = DECLENCHEURS = */
+	/** == Initialisation globale == **/
 	public function tify_templates_register()
 	{		
 		// Affichage d'une info-bulle dans l'entrée de menu principal pour les nouveaux membres enregistrés
