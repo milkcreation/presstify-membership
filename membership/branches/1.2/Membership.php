@@ -3,7 +3,7 @@
 Plugin Name: Membership
 Plugin URI: http://presstify.com/plugins/membership
 Description: Gestion d'espaces Membres
-Version: 1.2
+Version: 1.2.0
 Author: Milkcreation
 Author URI: http://milkcreation.fr
 */
