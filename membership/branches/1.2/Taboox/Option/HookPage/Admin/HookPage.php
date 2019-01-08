@@ -1,6 +1,6 @@
 <?php
 
-namespace tiFy\Plugins\Membership\Taboox\Options\HookPage\Admin;
+namespace tiFy\Plugins\Membership\Taboox\Option\HookPage\Admin;
 
 use tiFy\Plugins\Membership\Options;
 
