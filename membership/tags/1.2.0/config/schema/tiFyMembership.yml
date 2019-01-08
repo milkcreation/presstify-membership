@@ -1,0 +1,10 @@
+Admin:
+  tiFyMembershipMenu:
+    admin_menu:
+      menu_slug:    'tiFyMembership'
+      icon_url:     'dashicons-businessman'
+      position:     71 
+
+Labels:
+  plural:           "<?php _e( 'Membres', 'tify' );?>"
+  singular:         "<?php _e( 'Membre', 'tify' );?>"

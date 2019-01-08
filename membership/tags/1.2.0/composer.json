@@ -1,0 +1,43 @@
+{
+  "name": "presstify-plugins/membership",
+  "description": "Extension PresstiFy de gestion d'espace membres.",
+  "type": "presstify-plugin",
+  "keywords": [
+    "presstify",
+    "plugins",
+    "wordpress",
+    "membership"
+  ],
+  "homepage": "https://svn.tigreblanc.fr/presstify-plugins/membership",
+  "time": "2019-01-08",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Jordy Manner",
+      "email": "jordy.manner@milkcreation.fr",
+      "role": "Developper"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://composer.tigreblanc.fr/presstify/"
+    }
+  ],
+  "require": {
+    "composer/installers": "~1.0",
+    "presstify/framework": "1.2.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "tiFy\\Plugins\\Membership\\": ""
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config" : {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}

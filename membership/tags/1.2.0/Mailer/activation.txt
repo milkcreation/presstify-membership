@@ -1,0 +1,9 @@
+Activation de votre compte sur le site *|SITE:NAME|* | *|SITE:DESCRIPTION|*
+Bonjour *|FNAME|* *|LNAME|*,
+
+Merci de vous être inscrit sur notre site.
+Veuillez confirmer votre inscription en cliquant sur le lien suivant :
+<a href="*|LINK:ACTIVATION|*">Je confirme mon inscription</a>
+
+Cependant, s'il s'agit d'une erreur et que vous n'êtes pas à l'initiative de cette inscription, vous pouvez toujours annuler votre inscription en cliquant sur cet autre lien :
+<a href="*|LINK:UNSUB|*">*|LINK:UNSUB|*</a>
