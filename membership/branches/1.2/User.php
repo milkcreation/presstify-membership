@@ -168,6 +168,7 @@ class User extends \tiFy\App\Factory
 		if( ! $activation_key = get_user_option( 'tify_membership_key', $user_id ) ) :
 			$activation_key = wp_generate_password( 32, false, false );
 			update_user_option( $user_id, 'tify_membership_key', $activation_key );
+            update_user_option( $user_id, 'tify_membership_key_expiry', time() + (60*60*24) );
 		endif;
 		
 		return $activation_key;
