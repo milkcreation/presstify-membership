@@ -10,7 +10,7 @@ class Options extends \tiFy\Core\Templates\Admin\Model\TabooxOption\TabooxOption
 	   return array(
 			'tiFyPluginsMembershipHookPage' => array(
 				'title'		=> __( 'Page d\'accroche', 'tify' ),
-				'cb'		=> 'tiFy\Plugins\Membership\Taboox\Options\HookPage\Admin\HookPage',
+				'cb'		=> 'tiFy\Plugins\Membership\Taboox\Option\HookPage\Admin\HookPage',
 				'order'		=> 0
 			) 
 		);
