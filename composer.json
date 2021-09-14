@@ -3,8 +3,7 @@
   "description": "PresstiFy Plugin Membership",
   "type": "presstify-plugins",
   "keywords": ["presstify", "plugins", "wordpress", "membership"],
-  "homepage": "http://svn.milkcreation.fr/presstify-plugins/membership",
-  "license": "proprietary",
+  "homepage": "https://github.com/milkcreation/presstify-membership.git",
   "authors": [
     {
       "name": "Jordy Manner",
